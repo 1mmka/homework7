@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+<body>
+    <table style="border-collapse: collapse; border: 1px solid black;">
+        <tr>
+            <th style="border: 1px solid black;">ID</th>
+            <th style="border: 1px solid black;">NAME</th>
+            <th style="border: 1px solid black;">BOOK PRICE</th>
+        </tr>
+        {% for i in data %}
+            <tr>
+                <th style="border: 1px solid black;">{{i.pk}}</th>
+                <th style="border: 1px solid black;">{{i.name}}</th>
+                <th style="border: 1px solid black;">{{i.book_price}}</th>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
